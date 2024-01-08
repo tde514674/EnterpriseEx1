@@ -23,7 +23,7 @@ class TCPClient {
             outToServer.writeBytes(secondNumber+"\n");
             result = inFromServer.nextLine();
             System.out.println("The result is " + result);
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Error occurred: Closing the connection");
         } finally {
             try {
